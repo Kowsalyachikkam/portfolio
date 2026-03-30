@@ -6,76 +6,55 @@
 <style>
 body {
     margin: 0;
-    font-family: 'Segoe UI', sans-serif;
-    background: linear-gradient(135deg, #141e30, #243b55);
+    font-family: Arial;
+    background: linear-gradient(to right, #141e30, #243b55);
     color: white;
     text-align: center;
 }
 
 .container {
-    padding: 50px;
+    padding: 40px;
 }
 
 img {
-    width: 150px;
+    width: 140px;
     border-radius: 50%;
     border: 3px solid white;
 }
 
 h1 {
-    font-size: 40px;
-}
-
-.typing {
-    font-size: 20px;
-    margin-bottom: 20px;
+    font-size: 35px;
 }
 
 button {
-    padding: 12px 25px;
+    padding: 10px 20px;
     margin: 10px;
     border: none;
     background: #00c6ff;
     color: black;
-    border-radius: 25px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: 0.3s;
 }
 
 button:hover {
     background: #0072ff;
     color: white;
-    transform: scale(1.05);
 }
 
-.projects {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-    gap: 20px;
+.section {
     margin-top: 30px;
 }
 
 .card {
     background: white;
     color: black;
-    padding: 20px;
-    border-radius: 15px;
+    margin: 10px auto;
+    padding: 15px;
     width: 250px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-    transition: 0.3s;
-}
-
-.card:hover {
-    transform: translateY(-10px);
-}
-
-.footer {
-    margin-top: 40px;
-    font-size: 14px;
-    opacity: 0.7;
+    border-radius: 10px;
 }
 </style>
+
 </head>
 
 <body>
@@ -85,38 +64,43 @@ button:hover {
     <img src="https://via.placeholder.com/150">
 
     <h1>Hi, I'm Kowsalya 👋</h1>
-
-    <p class="typing">Machine Learning | AI | Developer</p>
+    <p>Data Science Student  | ML & AI Developer</p>
 
     <a href="https://github.com/Kowsalyachikkam">
-        <button>View GitHub</button>
+        <button>GitHub</button>
     </a>
 
-    <!-- 🔥 FIXED RESUME LINK -->
-    <a href="resume.pdf" target="_blank">Download Resume</a>
-    <h2>My Projects</h2>
+    <a href="resume.pdf" target="_blank">
+        <button>Download Resume</button>
+    </a>
 
-    <div class="projects">
+    <div class="section">
+        <h2>About Me</h2>
+        <p>I am a Computer Science student passionate about Machine Learning and building real-world projects.</p>
+    </div>
+
+    <div class="section">
+        <h2>Skills</h2>
+        <p>Python | Machine Learning | Deep Learning | HTML | CSS | GitHub</p>
+    </div>
+
+    <div class="section">
+        <h2>Projects</h2>
 
         <div class="card">
             <h3>🌿 Cotton Leaf Disease Detection</h3>
-            <p>Deep Learning using CNN for plant disease detection.</p>
+            <p>Deep Learning model using CNN</p>
         </div>
 
         <div class="card">
             <h3>🚗 Car Price Prediction</h3>
-            <p>Machine Learning model for predicting car prices.</p>
+            <p>Machine Learning model</p>
         </div>
 
         <div class="card">
             <h3>🤖 AI Chatbot</h3>
-            <p>Smart chatbot for college suggestions.</p>
+            <p>Smart assistant project</p>
         </div>
-
-    </div>
-
-    <div class="footer">
-        <p>© 2026 Kowsalya | All Rights Reserved</p>
     </div>
 
 </div>
