@@ -3,10 +3,11 @@
 <head>
 <title>Kowsalya Portfolio</title>
 <style>
+
 body {
     margin: 0;
-    font-family: Arial;
-    background: linear-gradient(to right, #667eea, #764ba2);
+    font-family: 'Segoe UI', sans-serif;
+    background: linear-gradient(135deg, #1f1c2c, #928dab);
     color: white;
     text-align: center;
 }
@@ -18,17 +19,45 @@ body {
 img {
     width: 150px;
     border-radius: 50%;
+    border: 3px solid white;
+    margin-bottom: 15px;
 }
 
 h1 {
     font-size: 40px;
 }
 
+p {
+    font-size: 18px;
+}
+
+.buttons a {
+    text-decoration: none;
+}
+
+button {
+    padding: 12px 25px;
+    margin: 10px;
+    border: none;
+    background: #ff4b2b;
+    color: white;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #ff416c;
+    transform: scale(1.05);
+}
+
 .projects {
+    margin-top: 40px;
     display: flex;
     justify-content: center;
-    gap: 20px;
     flex-wrap: wrap;
+    gap: 20px;
 }
 
 .card {
@@ -37,58 +66,67 @@ h1 {
     padding: 20px;
     border-radius: 15px;
     width: 250px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
     transition: 0.3s;
 }
 
 .card:hover {
-    transform: scale(1.05);
+    transform: translateY(-10px);
 }
 
-button {
-    padding: 10px 20px;
-    margin: 10px;
-    border: none;
-    background: black;
-    color: white;
-    border-radius: 10px;
-    cursor: pointer;
+.footer {
+    margin-top: 50px;
+    font-size: 14px;
+    opacity: 0.7;
 }
+
 </style>
 </head>
 
 <body>
 
 <div class="container">
+
     <img src="https://via.placeholder.com/150">
+
     <h1>Hi, I'm Kowsalya 👋</h1>
-    <p>Computer Science Student | ML Enthusiast</p>
+    <p>Computer Science Student | ML & AI Enthusiast</p>
 
-    <a href="https://github.com/Kowsalyachikkam">
-        <button>View GitHub</button>
-    </a>
+    <div class="buttons">
+        <a href="https://github.com/Kowsalyachikkam">
+            <button>View GitHub</button>
+        </a>
 
-    <a href="your-resume.pdf">
-        <button>Download Resume</button>
-    </a>
+        <a href="https://raw.githubusercontent.com/Kowsalyachikkam/portfolio/main/resume.pdf">
+            <button>Download Resume</button>
+        </a>
+    </div>
 
-    <h2>Projects</h2>
+    <h2>My Projects</h2>
 
     <div class="projects">
+
         <div class="card">
             <h3>🌿 Cotton Leaf Disease Detection</h3>
-            <p>Deep learning model using CNN</p>
+            <p>Deep Learning model using CNN for plant disease detection.</p>
         </div>
 
         <div class="card">
             <h3>🚗 Car Price Prediction</h3>
-            <p>Machine learning regression model</p>
+            <p>Machine Learning model to predict car prices.</p>
         </div>
 
         <div class="card">
             <h3>🤖 AI Chatbot</h3>
-            <p>College suggestion chatbot</p>
+            <p>Smart chatbot for college suggestions.</p>
         </div>
+
     </div>
+
+    <div class="footer">
+        <p>© 2026 Kowsalya | All Rights Reserved</p>
+    </div>
+
 </div>
 
 </body>
